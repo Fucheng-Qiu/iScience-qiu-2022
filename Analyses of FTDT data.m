@@ -1,4 +1,4 @@
-clear;clc;close all;
+clear;clc;close all; % Analyses of FDTD data created by fcqiu-20220608
 I= importdata('E.txt');   
 x= importdata('E-x.txt');  
 y= importdata('E-y.txt');  
@@ -11,8 +11,8 @@ c=colorbar;
 colorbar
 FS=18;
 colorbar('FontSize',FS);
-xlabel('X(¦Ìm)','FontSize',FS);
-ylabel('Y(¦Ìm)','FontSize',FS);
+xlabel('X(Â¦ÃŒm)','FontSize',FS);
+ylabel('Y(Â¦ÃŒm)','FontSize',FS);
 set(gca,'FontSize',FS);
 set(gca,'Xtick',-100:0.2:100);
 set(gca,'Ytick',-100:0.2:100);
@@ -24,7 +24,7 @@ y0=101.64;
 y1=101.64;
 IMx=I(y0:y1,x0:x1);
 plot(IMx);
-xlabel('X(¦Ìm)','FontSize',FS);
+xlabel('X(Â¦ÃŒm)','FontSize',FS);
 ylabel('Intensity','FontSize',FS);
 set(gca,'FontSize',FS);
 
@@ -37,6 +37,6 @@ xim=x(x0:x1);
 yim=x(y0:y1);
 IMy=I(y0:y1,x0:x1);
 plot(IMy);%title('improfile(Y)');
-xlabel('Y(¦Ìm)','FontSize',FS);
+xlabel('Y(Â¦ÃŒm)','FontSize',FS);
 ylabel('Intensity','FontSize',FS);
 set(gca,'FontSize',FS);
